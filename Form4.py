@@ -16,23 +16,8 @@ class Form4(QMainWindow):
         self.ui.pushButton.clicked.connect(lambda: QMessageBox.warning(
                 self, '', ":(",
                 QMessageBox.StandardButton.Ok))
-        self.move_button_randomly()
         # Таймер для проверки положения курсора
         self.timer = self.startTimer(50)  # Проверка каждые 50ms
-
-    def move_button_randomly(self):
-        # Получаем размеры формы и кнопки
-        form_width = self.width()
-        form_height = self.height()
-        button_width = self.ui.pushButton.width()
-        button_height = self.ui.pushButton.height()
-
-        # Генерируем случайные координаты в пределах формы
-        new_x = random.randint(0, form_width - button_width)
-        new_y = random.randint(0, form_height - button_height)
-
-        # Перемещаем кнопку
-        self.ui.pushButton.move(new_x, new_y)
 
     def timerEvent(self, event):
         # Получаем позиции курсора и кнопки
