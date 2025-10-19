@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow
 from start_ui import Ui_MainWindow as MainFormUI
 from Form1 import Form1
 from Form2 import Form2
-#from Form3 import Form3
+from Form3 import Form3
 #from Form4 import Form4
 #from Form5 import Form5
 #from Form6 import Form6
@@ -35,10 +35,6 @@ class MyWidget(QMainWindow):
             self.form = Form5(self)
         elif form_number == 6:
             self.form = Form6(self)
-        elif form_number == 7:
-            self.form = Form7(self)
-        elif form_number == 8:
-            self.form = Form8(self)
         self.form.show()
         self.close()
 
