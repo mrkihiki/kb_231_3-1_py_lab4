@@ -92,7 +92,7 @@
 ---
 
 <a id="task5"></a>
-## Задание №5 - Управление НЛО - [Form5.py](Form5.py)[Form5.exe](Form5.exe)
+## Задание №5 - Управление НЛО - [Form5.py](Form5.py)  [Form5.exe](Form5.exe)
 **Баллы: 3**
 
 ### Описание
