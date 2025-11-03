@@ -7,7 +7,7 @@ from Form2 import Form2
 from Form3 import Form3
 from Form4 import Form4
 from Form5 import Form5
-#from Form6 import Form6
+from Form6 import Form6
 
 class MyWidget(QMainWindow):
     def __init__(self):
