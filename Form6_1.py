@@ -176,6 +176,7 @@ class Form6_1(QMainWindow):
 
                     self.ui.tableWidget.setCellWidget(ii, jj, label)
                 jj += 1
+        self.ui.tableWidget.resizeRowsToContents()
 
     def closeEvent(self, event):
         event.accept()  # Разрешаем закрытие
