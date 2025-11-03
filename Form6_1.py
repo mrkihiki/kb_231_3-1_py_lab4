@@ -68,14 +68,14 @@ class Form6_1(QMainWindow):
                 self.select_data()
             elif self.ui.comboBox.currentText() == "автор":
                 for row in range(self.ui.tableWidget.rowCount()):
-                    item = self.ui.tableWidget.item(row, 1)
+                    item = self.ui.tableWidget.item(row, 2)
                     if item is not None:
                         item_text = item.text().lower()
                         # Скрываем строку, если текст не найден
                         self.ui.tableWidget.setRowHidden(row, self.ui.lineEdit.text().lower() not in item_text)
             elif self.ui.comboBox.currentText() == "название":
                 for row in range(self.ui.tableWidget.rowCount()):
-                    item = self.ui.tableWidget.item(row, 2)
+                    item = self.ui.tableWidget.item(row, 1)
                     if item is not None:
                         item_text = item.text().lower()
                         # Скрываем строку, если текст не найден
